@@ -22,21 +22,21 @@ export const products = [
     company: "Van Huesen",
   },
   {
-    _id: "623853b21fb149d2ee7b76c7",
+    _id: "623853b2736f19fd4eb8d44a",
     id: 2,
-    img: "https://images.unsplash.com/photo-1583743814966-8936f5b7be1a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8dCUyMHNoaXJ0fGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60",
-    title: "Black",
     star: (<>
       <AiFillStar className="rating-star" />
       <AiFillStar className="rating-star" />
       <AiFillStar className="rating-star" />
       </>
     ),
-    reviews: "(221 reviews)",
-    category: "round-neck",
+    reviews: "(872 reviews)",
+    category: "skinny",
     prevPrice: "$140",
     newPrice: "50",
-    gender: "male",
+    img: "https://i.pinimg.com/236x/af/96/95/af9695e0116a1d859336024e6cdcea10.jpg",
+    title: "Black Skull",
+    gender: "female",
     color: "black",
     company: "Allen Solly",
   },
@@ -100,21 +100,21 @@ export const products = [
     company: "Arrow",
   },
   {
-    _id: "623853b2736f19fd4eb8d44a",
+    _id: "623853b21fb149d2ee7b76c7",
     id: 6,
+    img: "https://images.unsplash.com/photo-1583743814966-8936f5b7be1a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8dCUyMHNoaXJ0fGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60",
+    title: "Black",
     star: (<>
       <AiFillStar className="rating-star" />
       <AiFillStar className="rating-star" />
       <AiFillStar className="rating-star" />
       </>
     ),
-    reviews: "(872 reviews)",
-    category: "skinny",
+    reviews: "(221 reviews)",
+    category: "round-neck",
     prevPrice: "$140",
     newPrice: "50",
-    img: "https://i.pinimg.com/236x/af/96/95/af9695e0116a1d859336024e6cdcea10.jpg",
-    title: "Black Skull",
-    gender: "female",
+    gender: "male",
     color: "black",
     company: "Allen Solly",
   },
