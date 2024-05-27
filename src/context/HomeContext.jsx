@@ -22,8 +22,11 @@ export const HomeContextProvider = (props) => {
     setCartItems((prev) => ({...prev, [itemId]: prev[itemId] - 1}))
   };
 
-  const contextValue = { cartItems, addToCart, removeFromCart };
-  console.log(cartItems);
+  const updateCartItemCount = (newAmount, itemId) => {
+    setCartItems((prev) => ({...prev, [itemId]: newAmount }))
+  };
+
+  const contextValue = { cartItems, addToCart, removeFromCart, updateCartItemCount };
 
   return <HomeContext.Provider value={contextValue}>{props.children}</HomeContext.Provider>;
 };
