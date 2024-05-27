@@ -1,10 +1,10 @@
 import React, { useContext } from "react";
-import { BsFillBagPlusFill } from "react-icons/bs";
 import {HomeContext} from '../context/HomeContext'
-
+import './Card.css'
 
 const Card = ({ id, img, title, star, reviews, prevPrice, newPrice }) => {
-  const { addToCart}  = useContext(HomeContext);
+  const { addToCart, cartItems}  = useContext(HomeContext);
+  const cartItemAmount = cartItems[id];
   
   return (
     <section className="card">
@@ -21,7 +21,7 @@ const Card = ({ id, img, title, star, reviews, prevPrice, newPrice }) => {
           </div>
           <div className="bag">
             <button className="addToCartBttn" onClick={() => addToCart(id)}>
-              <BsFillBagPlusFill className="bag-icon" />
+              <span className="addToCartText">Add to cart {cartItemAmount > 0 && <> ({cartItemAmount}) </>} </span>
             </button>
           </div>
         </section>

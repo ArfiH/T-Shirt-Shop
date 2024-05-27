@@ -55,7 +55,7 @@ export const products = [
     ),
     reviews: "(1510 reviews)",
     category: "sports",
-    prevPrice: "$140",
+    prevPrice: "$240",
     newPrice: "200",
     gender: "male",
     color: "yellow",
