@@ -1,29 +1,9 @@
 import { AiFillStar } from "react-icons/ai";
 
-const data = [
-  {
-    _id: "623853b2614ad5aba311fdd1",
-    index: 0,
-    star: (<>
-      <AiFillStar className="rating-star" />
-      <AiFillStar className="rating-star" />
-      <AiFillStar className="rating-star" />
-      <AiFillStar className="rating-star" />
-      </>
-    ),
-    reviews: "(134 reviews)",
-    category: "crew",
-    prevPrice: "$140",
-    newPrice: "150",
-    img: "https://i.pinimg.com/originals/9f/3d/13/9f3d13912d3cf78e4c87975bcebc1fee.jpg",
-    title: "Just Chill",
-    gender: "female",
-    color: "gray",
-    company: "Tommy Hilfiger",
-  },
+export const products = [
   {
     _id: "623853b2578e9e6ad1ae0dd5",
-    index: 1,
+    id: 1,
     img: "https://render.fineartamerica.com/images/rendered/default/t-shirt/23/30/images/artworkimages/medium/1/coffee-coding-syntax-aadil-farooq-transparent.png?targetx=0&targety=0&imagewidth=430&imageheight=516&modelwidth=430&modelheight=575",
     title: "Keep Coding",
     star: (<>
@@ -43,7 +23,7 @@ const data = [
   },
   {
     _id: "623853b21fb149d2ee7b76c7",
-    index: 2,
+    id: 2,
     img: "https://images.unsplash.com/photo-1583743814966-8936f5b7be1a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8dCUyMHNoaXJ0fGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60",
     title: "Black",
     star: (<>
@@ -62,7 +42,7 @@ const data = [
   },
   {
     _id: "623853b2e91c8de578c9245e",
-    index: 3,
+    id: 3,
     img: "https://5.imimg.com/data5/SH/GC/MY-8764775/mens-t-shirt-500x500.jpg",
     title: "Mix Yellow",
     star: (<>
@@ -83,7 +63,7 @@ const data = [
   },
   {
     _id: "623853b2239582e48409ccc6",
-    index: 4,
+    id: 4,
     star: (<>
       <AiFillStar className="rating-star" />
       <AiFillStar className="rating-star" />
@@ -101,7 +81,7 @@ const data = [
   },
   {
     _id: "623853b2cdda0d5bc294f791",
-    index: 5,
+    id: 5,
     img: "https://m.media-amazon.com/images/I/61GMJ+3ekAS._AC_UL320_.jpg",
     title: "Right Price",
     star: (<>
@@ -121,7 +101,7 @@ const data = [
   },
   {
     _id: "623853b2736f19fd4eb8d44a",
-    index: 6,
+    id: 6,
     star: (<>
       <AiFillStar className="rating-star" />
       <AiFillStar className="rating-star" />
@@ -138,6 +118,24 @@ const data = [
     color: "black",
     company: "Allen Solly",
   },
+  {
+    _id: "623853b2614ad5aba311fdd1",
+    id: 7,
+    star: (<>
+      <AiFillStar className="rating-star" />
+      <AiFillStar className="rating-star" />
+      <AiFillStar className="rating-star" />
+      <AiFillStar className="rating-star" />
+      </>
+    ),
+    reviews: "(134 reviews)",
+    category: "crew",
+    prevPrice: "$140",
+    newPrice: "150",
+    img: "https://i.pinimg.com/originals/9f/3d/13/9f3d13912d3cf78e4c87975bcebc1fee.jpg",
+    title: "Just Chill",
+    gender: "female",
+    color: "gray",
+    company: "Tommy Hilfiger",
+  }
 ];
-
-export default data;

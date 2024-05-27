@@ -1,13 +1,13 @@
 import React from "react";
 import { useState } from "react";
-
 import Navigation from "../Navigation/Nav";
 import Products from "../Products/Products";
-import products from "../database/data";
+import { products } from "../database/data";
 import Recommended from "../Recommended/Recommended";
 import Sidebar from "../Sidebar/Sidebar";
 import Card from "../components/Card";
 import "../index.css";
+import "./Home.css"
 
 const Home = () => {
   const [selectedCategory, setSelectedCategory] = useState(null);
@@ -54,9 +54,10 @@ const Home = () => {
     }
 
     return filteredProducts.map(
-      ({ img, title, star, reviews, prevPrice, newPrice }) => (
+      ({ id, img, title, star, reviews, prevPrice, newPrice }) => (
         <Card
-          key={Math.random()}
+          id = {id}
+          key={id}
           img={img}
           title={title}
           star={star}
@@ -72,10 +73,14 @@ const Home = () => {
 
   return (
     <>
-      <Sidebar handleChange={handleChange} />
-      <Navigation query={query} handleInputChange={handleInputChange} />
-      <Recommended handleClick={handleClick} />
-      <Products result={result} />
+      <div className="flex-container">
+        <Sidebar handleChange={handleChange} />
+        <main className="main-section">
+          <Navigation query={query} handleInputChange={handleInputChange} />
+          <Recommended handleClick={handleClick} />
+          <Products result={result} />
+        </main>
+      </div>
     </>
   );
 };
