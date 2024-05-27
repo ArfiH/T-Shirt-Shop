@@ -1,9 +1,8 @@
 import React from "react";
 import { useState } from "react";
-
 import Navigation from "../Navigation/Nav";
 import Products from "../Products/Products";
-import products from "../database/data";
+import { products } from "../database/data";
 import Recommended from "../Recommended/Recommended";
 import Sidebar from "../Sidebar/Sidebar";
 import Card from "../components/Card";
@@ -55,9 +54,10 @@ const Home = () => {
     }
 
     return filteredProducts.map(
-      ({ img, title, star, reviews, prevPrice, newPrice }) => (
+      ({ id, img, title, star, reviews, prevPrice, newPrice }) => (
         <Card
-          key={Math.random()}
+          id = {id}
+          key={id}
           img={img}
           title={title}
           star={star}
