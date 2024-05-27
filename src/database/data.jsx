@@ -62,26 +62,8 @@ export const products = [
     company: "Tommy Hilfiger",
   },
   {
-    _id: "623853b2239582e48409ccc6",
-    id: 4,
-    star: (<>
-      <AiFillStar className="rating-star" />
-      <AiFillStar className="rating-star" />
-      </>
-    ),
-    reviews: "(330 reviews)",
-    category: "round-neck",
-    prevPrice: "$140",
-    newPrice: "100",
-    img: "https://images.unsplash.com/photo-1576566588028-4147f3842f27?q=80&w=464&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    title: "Bachelor",
-    gender: "male",
-    color: "white",
-    company: "Van Huesen",
-  },
-  {
     _id: "623853b2cdda0d5bc294f791",
-    id: 5,
+    id: 4,
     img: "https://m.media-amazon.com/images/I/61GMJ+3ekAS._AC_UL320_.jpg",
     title: "Right Price",
     star: (<>
@@ -98,6 +80,24 @@ export const products = [
     gender: "male",
     color: "black",
     company: "Arrow",
+  },
+  {
+    _id: "623853b2239582e48409ccc6",
+    id: 5,
+    star: (<>
+      <AiFillStar className="rating-star" />
+      <AiFillStar className="rating-star" />
+      </>
+    ),
+    reviews: "(330 reviews)",
+    category: "round-neck",
+    prevPrice: "$140",
+    newPrice: "100",
+    img: "https://images.unsplash.com/photo-1576566588028-4147f3842f27?q=80&w=464&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    title: "Bachelor",
+    gender: "male",
+    color: "white",
+    company: "Van Huesen",
   },
   {
     _id: "623853b21fb149d2ee7b76c7",
