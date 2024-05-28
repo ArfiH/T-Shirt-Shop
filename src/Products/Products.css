@@ -48,3 +48,13 @@
   .bag-icon {
     color: #535353;
   }
+
+@media (max-width: 568px) {
+  .card-container {
+    display: block;
+  }
+
+  .card {
+    text-align: center;
+  }
+}
