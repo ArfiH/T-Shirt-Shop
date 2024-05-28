@@ -25,3 +25,8 @@ input {
 .profile-container {
   margin-right: 2.5rem;
 }
+
+.cart-link {
+    display: inline-block;
+    margin: 0 1rem;
+}
