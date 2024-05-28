@@ -1,28 +1,32 @@
 nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1.25rem 0;
-    z-index: 999;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.25rem 0;
+  z-index: 999;
 }
 
 input {
-    padding: 0.75rem 1.25rem;
-    border: none;
-    background: #f7f6f6;
-    outline: none;
-    border-radius: 5px;
-    position: relative;
-    width: 14rem;
+  padding: 0.75rem 1.25rem;
+  border: none;
+  background: #f7f6f6;
+  outline: none;
+  border-radius: 5px;
+  position: relative;
+  width: 14rem;
 }
 
 .nav-icons {
-    width: 1.5rem;
-    height: 1.5rem;
-    margin-left: 2rem;
-    color: gray;
+  width: 1.5rem;
+  height: 1.5rem;
+  color: gray;
 }
 
 .profile-container {
-    margin-right: 2.5rem;
+  margin-right: 2.5rem;
+}
+
+.cart-link {
+    display: inline-block;
+    margin: 0 1rem;
 }

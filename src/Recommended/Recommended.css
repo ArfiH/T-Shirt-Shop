@@ -1,17 +1,19 @@
 .recommended-flex {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .recommended-title {
-    margin-bottom: 20px;
-    margin-top: 20px;
-    font-size: 20px;
+    margin-bottom: 1.2rem;
+    margin-top: 1.2rem;
+    font-size: 1.2rem;
     font-family: sans-serif, "Times New Roman", Times, serif;
 }
 
 .btns {
-  padding: 10px 20px;
-  margin-right: 6px;
+  padding: 0.6rem 1.2rem;
+  margin-right: 0.6rem;
+  margin-bottom: 0.6rem;
   background: transparent;
   border-radius: 5px;
   color: #323232;

@@ -1,4 +1,5 @@
 import { AiFillStar } from "react-icons/ai";
+import plain from "../assets/image/plain-black-shirt.jpg"
 
 export const products = [
   {
@@ -137,5 +138,25 @@ export const products = [
     gender: "female",
     color: "gray",
     company: "Tommy Hilfiger",
+  },
+  {
+    _id: "623853b2578e9e6ad1ae0zd5",
+    id: 8,
+    img: plain,
+    title: "Plain Black",
+    star: (<>
+      <AiFillStar className="rating-star" />
+      <AiFillStar className="rating-star" />
+      <AiFillStar className="rating-star" />
+      <AiFillStar className="rating-star" />
+      </>
+    ),
+    reviews: "(342 reviews)",
+    category: "round-neck",
+    prevPrice: "$140",
+    newPrice: "100",
+    gender: "male",
+    color: "white",
+    company: "Van Huesen",
   }
 ];

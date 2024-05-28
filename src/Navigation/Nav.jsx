@@ -19,7 +19,7 @@ const Nav = ({ handleInputChange, query }) => {
         <a href="#">
           <FiHeart className="nav-icons" />
         </a>
-        <div className="cart-link" style={{display: "inline-block"}}>
+        <div className="cart-link" >
           <Link to="/cart">
             <AiOutlineShoppingCart className="nav-icons" />
           </Link>
