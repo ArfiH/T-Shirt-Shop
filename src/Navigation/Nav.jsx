@@ -1,6 +1,6 @@
+import { AiOutlineShoppingCart, AiOutlineUserAdd } from "react-icons/ai";
 import { FiHeart } from "react-icons/fi";
 import { Link } from "react-router-dom";
-import { AiOutlineShoppingCart, AiOutlineUserAdd } from "react-icons/ai";
 import "./Nav.css";
 
 const Nav = ({ handleInputChange, query }) => {
