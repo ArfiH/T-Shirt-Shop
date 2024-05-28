@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState } from "react";
 import Category from "./Category/Category";
 import Price from "./Price/Price";
 import Colors from "./Colors/Colors";
@@ -16,9 +16,9 @@ const Sidebar = ({ handleChange }) => {
       <div className="hamburger" onClick={toggleSidebar}>
         &#9776;
       </div>
-      <section className={`sidebar ${isSidebarVisible ? 'visible' : ''}`}>
+      <section className={`sidebar ${isSidebarVisible ? "visible" : ""}`}>
         <div className="logo-container">
-          {/* Logo or heading here */}
+          T-Shirt shop
         </div>
         <Category handleChange={handleChange} />
         <Price handleChange={handleChange} />
