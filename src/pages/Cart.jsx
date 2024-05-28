@@ -18,12 +18,17 @@ const Cart = () => {
           return <CartItem key={product._id} data={product} />
         }
       })}
-
-      <div className="checkout">
-        <p> Total amount: ${totalAmount}</p>
-        <button onClick={() => navigate("/")}> Continue Shopping</button>
-        <button> Checkout </button>
-      </div>
+      
+      { totalAmount > 0 ? 
+        <div className="checkout">
+          <p> Total amount: ${totalAmount}</p>
+          <button onClick={() => navigate("/")}> Continue Shopping</button>
+          <button> Checkout </button>
+        </div>
+      : <div  className="checkout">
+          <h3 className="cartEmpty"> Cart is empty</h3>
+          <button onClick={() => navigate("/")}> View catalog </button>
+        </div> }
     </div>
   </div>;
 
