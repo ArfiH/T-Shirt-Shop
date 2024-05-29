@@ -156,7 +156,7 @@ export const products = [
     prevPrice: "$140",
     newPrice: "100",
     gender: "male",
-    color: "white",
+    color: "black",
     company: "Van Huesen",
   }
 ];

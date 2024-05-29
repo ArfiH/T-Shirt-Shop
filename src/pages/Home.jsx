@@ -44,12 +44,13 @@ const Home = () => {
     // Applying selected filter
     if (selected) {
       filteredProducts = filteredProducts.filter(
-        ({ category, color, company, newPrice, title }) =>
+        ({ category, color, company, newPrice, title, gender }) =>
           category === selected ||
           color === selected ||
           company === selected ||
           newPrice === selected ||
-          title === selected
+          title === selected ||
+          gender === selected
       );
     }
 
