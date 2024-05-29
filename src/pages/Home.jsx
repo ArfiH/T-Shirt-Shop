@@ -55,7 +55,7 @@ const Home = () => {
     }
 
     return filteredProducts.map(
-      ({ id, _id, img, title, star, reviews, prevPrice, newPrice }) => (
+      ({ id, _id, img, title, star, reviews, prevPrice, newPrice, purchased, available }) => (
         <Card
           id = {id}
           key={_id}
@@ -65,6 +65,8 @@ const Home = () => {
           reviews={reviews}
           prevPrice={prevPrice}
           newPrice={newPrice}
+          purchased={purchased}
+          available={available}
         />
       )
     );

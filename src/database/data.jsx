@@ -1,5 +1,5 @@
 import { AiFillStar } from "react-icons/ai";
-import plain from "../assets/image/plain-black-shirt.jpg"
+import plain from "../assets/image/plain-black-shirt.jpg";
 
 export const products = [
   {
@@ -7,11 +7,12 @@ export const products = [
     id: 1,
     img: "https://render.fineartamerica.com/images/rendered/default/t-shirt/23/30/images/artworkimages/medium/1/coffee-coding-syntax-aadil-farooq-transparent.png?targetx=0&targety=0&imagewidth=430&imageheight=516&modelwidth=430&modelheight=575",
     title: "Keep Coding",
-    star: (<>
-      <AiFillStar className="rating-star" />
-      <AiFillStar className="rating-star" />
-      <AiFillStar className="rating-star" />
-      <AiFillStar className="rating-star" />
+    star: (
+      <>
+        <AiFillStar className="rating-star" />
+        <AiFillStar className="rating-star" />
+        <AiFillStar className="rating-star" />
+        <AiFillStar className="rating-star" />
       </>
     ),
     reviews: "(342 reviews)",
@@ -21,14 +22,17 @@ export const products = [
     gender: "female",
     color: "white",
     company: "Van Huesen",
+    available: 5,
+    purchased: 0,
   },
   {
     _id: "623853b2736f19fd4eb8d44a",
     id: 2,
-    star: (<>
-      <AiFillStar className="rating-star" />
-      <AiFillStar className="rating-star" />
-      <AiFillStar className="rating-star" />
+    star: (
+      <>
+        <AiFillStar className="rating-star" />
+        <AiFillStar className="rating-star" />
+        <AiFillStar className="rating-star" />
       </>
     ),
     reviews: "(872 reviews)",
@@ -40,18 +44,21 @@ export const products = [
     gender: "female",
     color: "black",
     company: "Allen Solly",
+    available: 5,
+    purchased: 0,
   },
   {
     _id: "623853b2e91c8de578c9245e",
     id: 3,
     img: "https://5.imimg.com/data5/SH/GC/MY-8764775/mens-t-shirt-500x500.jpg",
     title: "Mix Yellow",
-    star: (<>
-      <AiFillStar className="rating-star" />
-      <AiFillStar className="rating-star" />
-      <AiFillStar className="rating-star" />
-      <AiFillStar className="rating-star" />
-      <AiFillStar className="rating-star" />
+    star: (
+      <>
+        <AiFillStar className="rating-star" />
+        <AiFillStar className="rating-star" />
+        <AiFillStar className="rating-star" />
+        <AiFillStar className="rating-star" />
+        <AiFillStar className="rating-star" />
       </>
     ),
     reviews: "(1510 reviews)",
@@ -61,17 +68,20 @@ export const products = [
     gender: "male",
     color: "yellow",
     company: "Tommy Hilfiger",
+    available: 5,
+    purchased: 0,
   },
   {
     _id: "623853b2cdda0d5bc294f791",
     id: 4,
     img: "https://m.media-amazon.com/images/I/61GMJ+3ekAS._AC_UL320_.jpg",
     title: "Right Price",
-    star: (<>
-      <AiFillStar className="rating-star" />
-      <AiFillStar className="rating-star" />
-      <AiFillStar className="rating-star" />
-      <AiFillStar className="rating-star" />
+    star: (
+      <>
+        <AiFillStar className="rating-star" />
+        <AiFillStar className="rating-star" />
+        <AiFillStar className="rating-star" />
+        <AiFillStar className="rating-star" />
       </>
     ),
     reviews: "(735 reviews)",
@@ -81,13 +91,16 @@ export const products = [
     gender: "male",
     color: "black",
     company: "Arrow",
+    available: 5,
+    purchased: 0,
   },
   {
     _id: "623853b2239582e48409ccc6",
     id: 5,
-    star: (<>
-      <AiFillStar className="rating-star" />
-      <AiFillStar className="rating-star" />
+    star: (
+      <>
+        <AiFillStar className="rating-star" />
+        <AiFillStar className="rating-star" />
       </>
     ),
     reviews: "(330 reviews)",
@@ -99,16 +112,19 @@ export const products = [
     gender: "male",
     color: "white",
     company: "Van Huesen",
+    available: 5,
+    purchased: 0,
   },
   {
     _id: "623853b21fb149d2ee7b76c7",
     id: 6,
     img: "https://images.unsplash.com/photo-1583743814966-8936f5b7be1a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8dCUyMHNoaXJ0fGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60",
     title: "Black",
-    star: (<>
-      <AiFillStar className="rating-star" />
-      <AiFillStar className="rating-star" />
-      <AiFillStar className="rating-star" />
+    star: (
+      <>
+        <AiFillStar className="rating-star" />
+        <AiFillStar className="rating-star" />
+        <AiFillStar className="rating-star" />
       </>
     ),
     reviews: "(221 reviews)",
@@ -118,15 +134,18 @@ export const products = [
     gender: "male",
     color: "black",
     company: "Allen Solly",
+    available: 5,
+    purchased: 0,
   },
   {
     _id: "623853b2614ad5aba311fdd1",
     id: 7,
-    star: (<>
-      <AiFillStar className="rating-star" />
-      <AiFillStar className="rating-star" />
-      <AiFillStar className="rating-star" />
-      <AiFillStar className="rating-star" />
+    star: (
+      <>
+        <AiFillStar className="rating-star" />
+        <AiFillStar className="rating-star" />
+        <AiFillStar className="rating-star" />
+        <AiFillStar className="rating-star" />
       </>
     ),
     reviews: "(134 reviews)",
@@ -138,25 +157,30 @@ export const products = [
     gender: "female",
     color: "gray",
     company: "Tommy Hilfiger",
+    available: 5,
+    purchased: 0,
   },
   {
     _id: "623853b2578e9e6ad1ae0zd5",
     id: 8,
-    img: plain,
-    title: "Plain Black",
-    star: (<>
-      <AiFillStar className="rating-star" />
-      <AiFillStar className="rating-star" />
-      <AiFillStar className="rating-star" />
-      <AiFillStar className="rating-star" />
+    star: (
+      <>
+        <AiFillStar className="rating-star" />
+        <AiFillStar className="rating-star" />
+        <AiFillStar className="rating-star" />
+        <AiFillStar className="rating-star" />
       </>
     ),
     reviews: "(342 reviews)",
     category: "round-neck",
     prevPrice: "$140",
     newPrice: "100",
+    img: plain,
+    title: "Plain Black",
     gender: "male",
     color: "black",
     company: "Van Huesen",
-  }
+    available: 5,
+    purchased: 0,
+  },
 ];

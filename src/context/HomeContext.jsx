@@ -14,7 +14,6 @@ const getDefaultCart = () => {
 export const HomeContextProvider = (props) => {
   const [cartItems, setCartItems] = useState(getDefaultCart());
 
-
   const getTotalCartAmount = () => {
     let totalAmount = 0;
     for (const item in cartItems) {
@@ -25,21 +24,37 @@ export const HomeContextProvider = (props) => {
     }
 
     return totalAmount;
-  }
+  };
 
   const addToCart = (itemId) => {
-    setCartItems((prev) => ({...prev, [itemId]: prev[itemId] + 1}))
+    console.log(products[itemId - 1]);
+    console.log(cartItems[itemId]);
+    if (products[itemId - 1].available > cartItems[itemId]) {
+      setCartItems((prev) => ({ ...prev, [itemId]: prev[itemId] + 1 }));
+      products[itemId - 1].purchased += 1;
+    }
   };
 
   const removeFromCart = (itemId) => {
-    setCartItems((prev) => ({...prev, [itemId]: prev[itemId] - 1}))
+    setCartItems((prev) => ({ ...prev, [itemId]: prev[itemId] - 1 }));
+    products[itemId - 1].purchased -= 1;
   };
 
   const updateCartItemCount = (newAmount, itemId) => {
-    setCartItems((prev) => ({...prev, [itemId]: newAmount }))
+    setCartItems((prev) => ({ ...prev, [itemId]: newAmount }));
   };
 
-  const contextValue = { cartItems, addToCart, removeFromCart, updateCartItemCount, getTotalCartAmount };
+  const contextValue = {
+    cartItems,
+    addToCart,
+    removeFromCart,
+    updateCartItemCount,
+    getTotalCartAmount,
+  };
 
-  return <HomeContext.Provider value={contextValue}>{props.children}</HomeContext.Provider>;
+  return (
+    <HomeContext.Provider value={contextValue}>
+      {props.children}
+    </HomeContext.Provider>
+  );
 };
