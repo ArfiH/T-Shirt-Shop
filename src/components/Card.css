@@ -14,3 +14,14 @@
     color: white;
     background-color: black;
 }
+
+.out-of-stock {
+    background-color: rgb(255, 70, 70);
+    border: 1px solid gray;  
+    color: white;
+    border-radius: 20px;
+    margin-top: 0.2rem;
+    padding: 0.4rem;
+    text-align: center;
+    cursor: default;
+}

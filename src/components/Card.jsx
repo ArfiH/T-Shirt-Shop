@@ -1,9 +1,11 @@
 import React, { useContext } from "react";
 import {HomeContext} from '../context/HomeContext'
 import './Card.css'
+import { products } from "../database/data";
 
-const Card = ({ id, img, title, star, reviews, prevPrice, newPrice }) => {
-  const { addToCart, cartItems}  = useContext(HomeContext);
+
+const Card = ({ id, img, title, star, reviews, prevPrice, newPrice, purchased, available }) => {
+  const { addToCart, removeFromCart, cartItems}  = useContext(HomeContext);
   const cartItemAmount = cartItems[id];
   
   return (
@@ -23,6 +25,7 @@ const Card = ({ id, img, title, star, reviews, prevPrice, newPrice }) => {
             <button className="addToCartBttn" onClick={() => addToCart(id)}>
               <span className="addToCartText">Add to cart {cartItemAmount > 0 && <> ({cartItemAmount}) </>} </span>
             </button>
+              { (products[id - 1].purchased === products[id - 1].available) ? <div className="out-of-stock"> Out of stock </div> : <span></span> }
           </div>
         </section>
       </div>
