@@ -1,6 +1,6 @@
 import Home from "./pages/Home";
 import "./index.css";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { HashRouterRouter as Router, Routes, Route } from "react-router-dom";
 import Cart from "./pages/Cart";
 import { HomeContextProvider } from "./context/HomeContext";
 
