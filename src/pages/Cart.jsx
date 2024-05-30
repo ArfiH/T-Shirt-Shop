@@ -11,7 +11,9 @@ const Cart = () => {
   const navigate = useNavigate();
 
   return <div className="cart">
-    <h1>Cart</h1>
+    <div className="cart-heading">
+      <h1>Cart</h1>
+    </div>
     <div className="cartItems">
       {products.map((product) => {
         if (cartItems[product.id] > 0) {
