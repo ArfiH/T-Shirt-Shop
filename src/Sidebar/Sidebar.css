@@ -30,8 +30,9 @@
   cursor: pointer;
   position: fixed;
   top: 10px;
-  left: 10px;
+  left: 5px;
   z-index: 1000;
+  user-select: none;
 }
 
 @media (max-width: 900px) {
