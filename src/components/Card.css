@@ -1,3 +1,5 @@
+
+
 .addToCartBttn {
     border: 2px solid black;  
     color: black;
@@ -17,11 +19,15 @@
 
 .out-of-stock {
     background-color: rgb(255, 70, 70);
-    border: 1px solid gray;  
     color: white;
-    border-radius: 20px;
-    margin-top: 0.2rem;
+    border-radius: 10px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
     padding: 0.4rem;
     text-align: center;
     cursor: default;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
 }
