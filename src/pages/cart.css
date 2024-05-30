@@ -56,12 +56,16 @@
     color: black;
     border-radius: 5px;
     cursor: pointer;
-    transition: all 200ms linear;
+    transition: color 200ms linear;
 }
 
 .countHandler button:hover {
     background-color: black;
     color: white;
+}
+
+.countHandler button:active {
+    transform: scale(0.94);
 }
 
 
