@@ -9,12 +9,16 @@
     font-size: small;
     padding: 0.5rem;
     border-radius: 20px;
-    transition: all 200ms linear;
+    transition: color 200ms linear;
 }
 
 .addToCartBttn:hover {
     color: white;
     background-color: black;
+}
+
+.addToCartBttn:active {
+    transform: scale(0.94);
 }
 
 .out-of-stock {
