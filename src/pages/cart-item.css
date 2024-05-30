@@ -3,9 +3,9 @@
     border: 1px solid gray;  
     color: white;
     border-radius: 20px;
-    margin-top: 0.2rem;
     padding: 0.4rem;
     width: 12rem;
     text-align: center;
     cursor: default;
+    position: absolute;
 }
