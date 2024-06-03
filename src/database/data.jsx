@@ -1,4 +1,3 @@
-import { AiFillStar, AiOutlineStar }  from "react-icons/ai";
 import plain from "../assets/image/plain-black-shirt.jpg";
 
 export const products = [

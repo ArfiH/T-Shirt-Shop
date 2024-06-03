@@ -1,32 +1,31 @@
 import React, { useContext } from "react";
 import {HomeContext} from '../context/HomeContext'
 import './Card.css'
-import { products } from "../database/data";
 import Star from './Star'
 
-const Card = ({ id, img, title, star, reviews, prevPrice, newPrice, purchased, available }) => {
-  const { addToCart, removeFromCart, cartItems}  = useContext(HomeContext);
-  const cartItemAmount = cartItems[id];
+const Card = ({product}) => {
+  const { addToCart, cartItems}  = useContext(HomeContext);
+  const cartItemAmount = cartItems[product.id];
   
   return (
     <section className="card">
-      <img className="card-img" src={img} alt={title} />
+      <img className="card-img" src={product.img} alt={product.title} />
       <div className="card-details">
-        <h3 className="card-title">{title}</h3>
+        <h3 className="card-title">{product.title}</h3>
         <section className="card-reviews">
           
-          <Star star = {star} />
+          <Star star = {product.star} />
           
-          <span className="total-reviews">{reviews}</span>
+          <span className="total-reviews">{product.reviews}</span>
         </section>
         <section className="card-price">
           <div className="price">
-            <del>{prevPrice}</del> ${newPrice}
+            <del>{product.prevPrice}</del> ${product.newPrice}
           </div>
-          { available > 0 ?
+          { product.available > 0 ?
             (
             <div className="bag">
-              <button className="addToCartBttn" onClick={() => addToCart(id)}>
+              <button className="addToCartBttn" onClick={() => addToCart(product.id)}>
                 <span className="addToCartText">Add to cart {cartItemAmount > 0 && <> ({cartItemAmount}) </>} </span>
               </button>
                 
