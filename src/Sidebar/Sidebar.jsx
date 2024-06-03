@@ -3,6 +3,7 @@ import Category from "./Category/Category";
 import Price from "./Price/Price";
 import Colors from "./Colors/Colors";
 import Gender from "./Gender/Gender";
+import Availability from "./Availability/Availability";
 import "./Sidebar.css";
 
 const Sidebar = ({ handleChange }) => {
@@ -25,6 +26,7 @@ const Sidebar = ({ handleChange }) => {
         <Price handleChange={handleChange} />
         <Colors handleChange={handleChange} />
         <Gender handleChange={handleChange} />
+        <Availability handleChange={handleChange} />
       </section>
     </>
   );

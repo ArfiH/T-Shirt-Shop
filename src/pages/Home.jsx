@@ -44,13 +44,15 @@ const Home = () => {
     // Applying selected filter
     if (selected) {
       filteredProducts = filteredProducts.filter(
-        ({ category, color, company, newPrice, title, gender }) =>
+        ({ category, color, company, newPrice, title, gender, available }) =>
           category === selected ||
           color === selected ||
           company === selected ||
           newPrice === selected ||
           title === selected ||
-          gender === selected
+          gender === selected ||
+          selected === "instock" ? available > 0 : false ||
+          selected === "outofstock" ? available === 0 : false
       );
     }
 
@@ -73,7 +75,7 @@ const Home = () => {
   }
 
   const result = filteredData(products, selectedCategory, query);
-
+  console.log(selectedCategory);
   return (
     <>
       <div className="flex-container">
