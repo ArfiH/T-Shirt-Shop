@@ -1,4 +1,3 @@
-import { AiFillStar, AiOutlineStar }  from "react-icons/ai";
 import plain from "../assets/image/plain-black-shirt.jpg";
 
 export const products = [
@@ -77,7 +76,7 @@ export const products = [
     img: "https://images.unsplash.com/photo-1576566588028-4147f3842f27?q=80&w=464&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     title: "Bachelor",
     gender: "male",
-    color: "white",
+    color: "gray",
     company: "Van Huesen",
     available: 5,
     purchased: 0,
@@ -111,7 +110,7 @@ export const products = [
     gender: "female",
     color: "gray",
     company: "Tommy Hilfiger",
-    available: 0,
+    available: 1,
     purchased: 0,
   },
   {

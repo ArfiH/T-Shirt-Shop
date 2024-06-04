@@ -57,18 +57,9 @@ const Home = () => {
     }
 
     return filteredProducts.map(
-      ({ id, _id, img, title, star, reviews, prevPrice, newPrice, purchased, available }) => (
+      (product) => (
         <Card
-          id = {id}
-          key={_id}
-          img={img}
-          title={title}
-          star={star}
-          reviews={reviews}
-          prevPrice={prevPrice}
-          newPrice={newPrice}
-          purchased={purchased}
-          available={available}
+          product = {product}
         />
       )
     );
